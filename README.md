@@ -16,6 +16,15 @@
         .....
         xmlns:sdk="clr-namespace:EasiNote.Sdk;assembly=EasiNote.Sdk"
         ......>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                ......
+                <ResourceDictionary Source="/EasiNote.Sdk;component/Resources.xaml" />
+                ......
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
     <Grid>
         ......
         <sdk:Board x:Name="EasiNoteBoard"/>
